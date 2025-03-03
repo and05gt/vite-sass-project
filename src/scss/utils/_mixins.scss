@@ -27,11 +27,11 @@
 }
 
 @mixin frame($width, $height: $width, $is-circle: false) {
-  $width: $width;
-  $height: $height;
+  width: $width;
+  height: $height;
 
   @if $is-circle {
-    border: 50%;
+    border-radius: 50%;
     overflow: hidden;
   }
 
@@ -51,7 +51,7 @@
     border-radius: 100px;
 
     &:hover {
-      background-color: rgba(#fff, 0, 3);
+      background-color: rgba(#fff, 0.3);
     }
   }
 
